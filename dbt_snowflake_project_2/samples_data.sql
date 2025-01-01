@@ -52,11 +52,11 @@ INSERT INTO Products (ProductID, Name, Category, RetailPrice, SupplierPrice, Sup
 
 -- Sample data for Orders table
 INSERT INTO Orders (OrderID, OrderDate, CustomerID, EmployeeID, StoreID, Status, Updated_at) VALUES
-(1, '2024-07-15', 'C001', 1, 1, 'Shipped', '2024-08-01 10:00:00'),
-(2, '2024-07-16', 'C002', 2, 2, 'Pending', '2024-08-01 10:00:00'),
-(3, '2024-07-17', 'C003', 3, 3, 'Delivered', '2024-08-01 10:00:00'),
-(4, '2024-07-18', 'C004', 4, 4, 'Processing', '2024-08-01 10:00:00'),
-(5, '2024-07-19', 'C005', 5, 5, 'Cancelled', '2024-08-01 10:00:00');
+(1, '2024-07-15', 'C001', 1, 1, '01', '2024-08-01 10:00:00'),
+(2, '2024-07-16', 'C002', 2, 2, '02', '2024-08-01 10:00:00'),
+(3, '2024-07-17', 'C003', 3, 3, '03', '2024-08-01 10:00:00'),
+(4, '2024-07-18', 'C004', 4, 4, '04', '2024-08-01 10:00:00'),
+(5, '2024-07-19', 'C005', 5, 5, '05', '2024-08-01 10:00:00');
 
 -- Sample data for OrderItems table
 INSERT INTO OrderItems (OrderItemID, OrderID, ProductID, Quantity, UnitPrice, Updated_at) VALUES

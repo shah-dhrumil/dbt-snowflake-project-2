@@ -14,3 +14,21 @@ models:
         description: 'The jobtitle of the employee'
         tests:
           - string_not_empty
+  - name: order_stg
+    description: 'This model is a staging table for orders'
+    columns:
+      - name: orderid
+        tests:
+          - unique
+          - not_null
+      - name: Status
+        tests:
+          - accepted_values:
+              values: ['01', '02', '03', '04', '05']
+  - name: orderitems_stg
+    columns:
+      - name: orderid
+        tests:
+          - relationships:
+              to: ref('order_stg')
+              field: orderid
