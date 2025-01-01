@@ -1,0 +1,4 @@
+{
+    "dbt.enableNewLineagePanel": true,
+    "dbt.dbtPythonPathOverride": "C:\\Python\\virtualenvs\\env_dbt\\Scripts\\python.exe"
+}

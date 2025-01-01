@@ -1,0 +1,16 @@
+version: 2
+models:
+  - name: customer_stg
+    description: 'This model is a staging table for customers'
+    columns:
+      - name: email
+        description: 'The email address of the customer'
+        tests:
+          - string_not_empty
+  - name: employees_stg
+    description: 'This model is a staging table for employees'
+    columns:
+      - name: jobtitle
+        description: 'The jobtitle of the employee'
+        tests:
+          - string_not_empty
